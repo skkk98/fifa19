@@ -26,7 +26,7 @@ SECRET_KEY = 'byn(xs=@r!==#j!3fj8k71-i3jx6=p&osj0(!x*#(2m5l1r=aj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://evening-fortress-54482.herokuapp.com/', '127.0.0.1']
 
 
 # Application definition
