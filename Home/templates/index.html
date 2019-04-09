@@ -1,0 +1,206 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sports Predictor</title>
+	<meta name="description" content="A free responsive website template made exclusively for Frittt by Themesforce and Sarfraz Shaukat">
+	<meta name="keywords" content="website template, css3, one page, bootstrap, app template, web app, start-up">
+	<meta name="author" content="Themesforce and Sarfraz Shaukat for Frittt">
+	<link rel="icon" type="image/png" href= {% static "favicons/favicon-16x16.png" %} sizes="16x16">
+	<link rel="stylesheet" href= {% static "css/bootstrap.css" %}>
+	<link rel="stylesheet" href= {% static "fonts/font-awesome-4.3.0/css/font-awesome.min.css" %}>
+	<link rel="stylesheet" href= {% static "css/all.css" %}>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<script>
+	$("nav").find("a").click(function(e) {
+    e.preventDefault();
+    var section = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(section).offset().top
+    });
+});
+</script>
+<div id="wrapper">
+		<header id="header">
+			<div class="container">
+				<div class="logo"><a href="#"><img src= {% static "images/img3_3.png" %} alt="FifaWorld"></a></div>
+				<nav id="nav">
+					<div class="opener-holder">
+						<a href="#" class="nav-opener"><span></span></a>
+					</div>
+					<a href="javascript:" class="btn btn-primary rounded">Enroll Today</a>
+					<div class="nav-drop">
+						<ul>
+							<li class="active visible-sm visible-xs"><a href="#">Home</a></li>
+						    <li><a href="#top" >About Us</a></li>
+							<li><a href="#Newsletter">Newsletter</a></li>
+							<li><a href="#contact us">Get social</a></li>
+						</ul>
+						<div class="drop-holder visible-sm visible-xs">
+							<span>Follow Us</span>
+							<ul class="social-networks">
+								<li><a class="fa fa-github" href="#"></a></li>
+								<li><a class="fa fa-twitter" href="#"></a></li>
+								<li><a class="fa fa-facebook" href="#"></a></li>
+								<li><a class="fa fa-linkedin" href="#"></a></li>
+								<li><a class="fa fa-youtube" href="#"></a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+	<section class="visual">
+		<div class="container">
+			<div class="text-block">
+				<div class="heading-holder">
+					<h1>Design your dream team in the FifaWorld</h1>
+				</div>
+				<p class="tagline">Soccer is simple , but it is difficult to play simple.</p>
+				<span class="info">Rule now</span>
+			</div>
+		</div>
+		<img src= {% static "images/img7.jpg" %} alt="" class="bg-stretch">
+	</section>
+	<section class="main" id="top">
+		<div class="container">
+			<div id="cta">
+				<a href="javascript:" class="btn btn-primary rounded">Start forming your dream team</a>
+				<p>Behind every kick of the ball, there has to be a thought.</p>
+			</div>
+			<div class="row" >
+				<div class="text-box col-md-offset-1 col-md-10" >
+					<h2>About Us</h2>
+					<p>An athlete cannot run with money in his pockets. He must run with hope in his heart and dreams in his head.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<ul class="visual-list">
+						<li>
+							<div class="img-holder">
+								<img src= {% static "images/img4.jpg" %} width="110" alt="">
+							</div>
+							<div class="text-holder">
+								<h3>Salient Features</h3>
+								<p>It is a user friendly website with mobile compatibility, well planned information Architecture , accessible on different browsers .
+                                Features also include fast load time and effective navigation .</p>
+							</div>
+						</li>
+						<li>
+							<div class="img-holder">
+								<img src= {% static "images/img5.jpg" %} width="110" alt="">
+							</div>
+							<div class="text-holder">
+								<h3>Players' Statistics</h3>
+								<p>With huge dataset , analyse the data according to players age , clubs , abilities on different positions etc . Players performance can be predicted using the data. The stats contain detailed information on every aspect.</p>
+
+							</div>
+						</li>
+						<li>
+							<div class="img-holder">
+								<img src={% static "images/img6.jpg" %} height="78" width="110" alt="">
+							</div>
+							<div class="text-holder">
+								<h3>Create your team</h3>
+								<p>Once knowing the statistics of each player and it's performance a potential team is created considering all aspects of onfield performance .</p>
+							</div>
+						</li>
+						<li>
+							<div class="img-holder">
+								<img src={% static "images/img10.jpg" %} height="71" width="110" alt="">
+							</div>
+							<div class="text-holder">
+								<h3>Team-wise Analysis</h3>
+								<p>All players here belong to a particular team and hence their performances can be analysed grouping them as teams and then considering team wise excellence. </p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-7">
+					<div class="slide-holder">
+						<div class="img-slide scroll-trigger"><img src={% static "images/img8.jpg" %} height="640" width="684" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+    <section class="main-zero-padd">
+    <img src= {% static "images/img9.jpg" %} alt="" style="max-width:100%;" />
+
+
+
+
+
+
+	</section>
+
+	<section class="area" id="Newsletter">
+		<div class="container">
+			<div class="subscribe">
+				<h3>Subscribe to Our Newsletter</h3>
+				<form class="form-inline">
+					<button type="submit" class="btn btn-primary rounded">Subscribe</button>
+					<div class="form-group">
+						<input type="email" class="form-control rounded" id="exampleInputEmail2" placeholder="Email...">
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div class="container">
+			<div class="footer-holder">
+				<div class="row  text-center">
+					<div class="col-md-12">
+						<a href="#"><img src= {% static "images/img3_3.png" %} alt="Sports HTML Template"></a>
+					</div>
+
+				</div>
+                <div class="row">
+                	<div id="cta" class="cta-footer">
+                        <a href="javascript:" class="btn btn-primary rounded">Start Teaming Now</a>
+                        <p>There is no pressure when you're making a dream come true.</p>
+                    </div>
+                </div>
+                <div class="row" id="contact us">
+                	<div class="col-md-6">
+                    	<h3>We live your galaxy</h3>
+
+                        <p>
+                        	NIT,Raipur.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 text-right">
+                    	<ul class="social">
+                        	<li><a href="javascript:"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="javascript:"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="javascript:"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="javascript:"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="javascript:"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src= {% static "js/jquery-1.11.2.min.js" %}></script>
+<script src= {% static "js/bootstrap.js" %}></script>
+<script src= {% static "js/jquery.main.js" %}></script>
+</body>
+</html>
