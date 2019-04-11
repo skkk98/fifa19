@@ -16,6 +16,9 @@ class Home(TemplateView):
 class Analysis(TemplateView):
     template_name = 'analysis.html'
 
+class Analyse(TemplateView):
+    template_name = 'analysis1.html'
+
 class Compare(View):
     template_name = 'compare.html'
     form_class = CompareForm
