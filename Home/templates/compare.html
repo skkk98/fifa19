@@ -1,0 +1,17 @@
+<form class="alb" action="" method="post">
+    {% csrf_token %}
+    {% for field in form %}
+    <div>
+        <div>
+            <span>{{ field.errors }}</span>
+        </div>
+    <label class="labels" style="text-align: center; color:black;">{{ field.label_tag }}</label>
+    <div class="fields" style="color:black;">
+        {{ field }}
+    </div>
+    </div>
+    {% endfor %}
+    <div>
+        <button type="submit" class="btn">Compare</button>
+    </div>
+</form>
