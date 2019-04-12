@@ -1,5 +1,12 @@
 {% load static %}
 <!DOCTYPE html>
+<style>
+a:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+</style>
+
+<div class="zoom"></div>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -157,6 +164,16 @@ http://www.tooplate.com/view/2086-multi-color
                                                 <h2 class="tm-figure-title">stamina vs<span> age</span></h2>
                                                 <p class="tm-figure-description">This graph shows scattered point representing stamina with respect to the age. The darker points on the graph correspond to the higher values of respective quantities. It also specifies the sprint speed.</p>
                                                 <a href= {% static "img1/stamina_vs_age.png" %}>View more</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src= {% static "images/messi_vs_ronaldo.png" %} alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">messi vs<span> ronaldo</span></h2>
+                                                <p class="tm-figure-description">The most awaited rivalry and comparison of the two great players. MESSI VS RONALDO</p>
+                                                <a href= {% static "images/messi_vs_ronaldo.png" %}>View more</a>
                                             </figcaption>
                                         </figure>
                                     </div>
