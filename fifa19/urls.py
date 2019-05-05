@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
-from Home.views import Home, Analysis, compareplayers, Compare, Analyse
+from Home.views import Home, Analysis, compareplayers, Compare, Analyse, subscribe
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,4 +25,5 @@ urlpatterns = [
     url(r'^compare/$', compareplayers, name='compare'),
     url(r'^elclasico$', Compare.as_view(), name='elclasico'),
     url(r'^analysed$', Analyse.as_view(), name='analyse'),
+    url(r'^subscribe$', subscribe, name='subscribe'),
 ]

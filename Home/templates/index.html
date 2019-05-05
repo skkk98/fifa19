@@ -151,10 +151,11 @@
 		<div class="container">
 			<div class="subscribe">
 				<h3>Subscribe to Our Newsletter</h3>
-				<form class="form-inline">
+				<form class="form-inline" action="/subscribe" method = "post">
+					{% csrf_token %}
 					<button type="submit" class="btn btn-primary rounded">Subscribe</button>
 					<div class="form-group">
-						<input type="email" class="form-control rounded" id="exampleInputEmail2" placeholder="Email...">
+						<input type="email" class="form-control rounded" id="exampleInputEmail2" placeholder="Email..." name="email">
 					</div>
 				</form>
 			</div>

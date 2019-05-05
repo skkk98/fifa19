@@ -1,6 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.views.generic import TemplateView, View
+from django.core.mail import EmailMessage
+from django.template.loader import render_to_string
+from django.conf import settings
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -18,6 +21,20 @@ class Analysis(TemplateView):
 
 class Analyse(TemplateView):
     template_name = 'analysis1.html'
+
+def subscribe(request):
+    if request.method == 'POST':
+        email = request.POST.get('email', None)
+        to_email = email
+        print(email)
+        message = render_to_string('sub_mail.html', {
+
+        })
+        mail_subject = "Newsletter"
+        mail = EmailMessage(mail_subject, message, settings.EMAIL_HOST_USER, to=[to_email])
+        mail.send()
+        return HttpResponseRedirect('/')
+    return HttpResponse("Enter valid EmailId")
 
 class Compare(View):
     template_name = 'compare.html'
